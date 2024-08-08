@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Animal Gallery</title>
+</head>
+<body>
+    <header>
+        <h1 class="headerAnimation">Welcome to the Animal Gallery</h1>
+        <div id="chooseSpan" class="headerAnimation">
+            <img src="images/arrows/arrowDown.svg"/>
+            <h4>Choose what you want to see</h4>
+            <img src="images/arrows/arrowDown.svg"/>
+        </div>
+        <div class="chooseContainer">
+            <a href="#catsSection">
+                <div class="chooseCatsGallery chooseElement headerAnimation">
+                    <img class="chooseGallery" src="images/galleries/cats/catsGallery.jpg" alt="">
+                    <span>Cats</span>
+                </div>
+            </a>
+            <a href="#dogsSection">
+                <div class="chooseDogsGallery chooseElement headerAnimation">
+                    <img class="chooseGallery" src="images/galleries/dogs/dogsGallery.jpg" alt="">
+                    <span>Dogs</span>
+                </div>
+            </a>
+            <a href="#ferretsSection">
+                <div class="chooseFerretsGallery chooseElement headerAnimation">
+                    <img class="chooseGallery" src="images/galleries/ferrets/ferretGallery.jpg" alt="">
+                    <span>Ferrets</span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <section id="catsSection" class="gallerySection">
+            <h2 class="element">Cats Gallery</h2>
+            <ul class="catsGallery gallery">
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat1.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat2.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat3.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat4.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat5.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat6.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat7.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat8.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat9.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat10.jpg" alt=""/></li>
+                <li class="thumbnail catsThumbnail element"><img src="./images/galleries/cats/cat11.jpg" alt=""/></li>
+            </ul>
+    </section>
+    <section id="dogsSection" class="gallerySection">
+        <h2 class="element">Dogs Gallery</h2>
+        <ul class="dogsGallery gallery">
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog1.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog2.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog3.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog4.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog5.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog6.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog7.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog8.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog9.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog10.jpg" alt=""></li>
+            <li class="thumbnail dogsThumbnail element"><img src="./images/galleries/dogs/dog11.jpg" alt=""></li>
+        </ul>
+    </section>
+    <section id="ferretsSection" class="gallerySection">
+        <h2 class="element">Ferrets Gallery</h2>
+        <ul class="ferretsGallery gallery">
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret1.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret2.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret3.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret4.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret5.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret6.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret7.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret8.jpg" alt=""></li>
+            <li class="thumbnail ferretsThumbnail element"><img src="./images/galleries/ferrets/ferret9.jpg" alt=""></li>
+        </ul>
+    </section>
+    <div class="popup hidden">
+        <button class="popup__close">x</button>
+        <button class="popup__arrow arrow--left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </button>
+        <button class="popup__arrow arrow--right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+            <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" fill="rgba(255,255,255,0.5)"/></svg>
+        </button>
+        <img class="popup__img" src="" alt=""/>
+    </div>
+    <script src="./scripts/show.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html> 
