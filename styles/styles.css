@@ -1,0 +1,53 @@
+@import "./header.css";
+@import "./animations.css";
+@import "./galleries.css";
+@import "./popup.css";
+@import "./footer.css";
+@import "./responsive.css";
+
+:root {
+    --bluePurple: #5343E6;
+    --darkBlue: #4366E6;
+    --brightBlue: #43CDE6;
+    --purple: #8943E6;
+    --blue: #6d57e1;
+    --orange: #E0936E;
+    --palePink: #E58B92;
+    --green: #4BFA63;
+    --paleGreen: #4BFAD9;
+    --rose: #FA5F7E;
+    --paleRose: #FAB2EC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.element {
+    opacity: 0;
+    transform: translateY(-5vh);
+    transition: 0.3s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.headerAnimation {
+    animation: fadeIn 1.5s ease-in-out;
+}
